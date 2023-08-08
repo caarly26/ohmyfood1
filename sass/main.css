@@ -202,7 +202,7 @@ nav .hook h2, nav .hook p {
 }
 .fonctionnement .boxFonctionnement ul li span {
   position: absolute;
-  left: -7px;
+  left: -14px;
   top: 20px;
   color: white;
   background: #9356DC;
@@ -213,6 +213,7 @@ nav .hook h2, nav .hook p {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  width: 1.5em;
 }
 
 #restaurant {
