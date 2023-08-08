@@ -1,0 +1,36 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+::-moz-placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Roboto";
+}/*# sourceMappingURL=reset.css.map */

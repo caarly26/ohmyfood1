@@ -1,0 +1,143 @@
+@charset "UTF-8";
+header h1 {
+  width: 90%;
+  justify-content: center;
+}
+
+.img_Restaurant img {
+  max-height: 400px;
+  position: relative;
+  z-index: -1;
+}
+
+#menu {
+  background: #F6F6F6;
+  margin-top: -4em;
+  border-radius: 30px 30px 0 0;
+}
+#menu .titleRestaurant {
+  padding: 2em;
+}
+#menu .titleRestaurant h2 {
+  display: flex;
+  justify-content: space-between;
+}
+#menu .box_Menu {
+  padding: 1em 2em;
+}
+#menu .box_Menu h3 {
+  text-transform: uppercase;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#menu .box_Menu h3::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #99E2D0;
+}
+#menu .box_Menu .card {
+  display: flex;
+  background: white;
+  border-radius: 15.0431px;
+  overflow: hidden;
+  width: 100%;
+  margin: 1em 0;
+  cursor: pointer;
+}
+#menu .box_Menu .card:hover .validation {
+  margin: 0em;
+  transition: 1s;
+}
+#menu .box_Menu .card .menuDescription {
+  padding: 1em;
+  width: 80%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#menu .box_Menu .card .menuDescription .dish, #menu .box_Menu .card .menuDescription .sideDish {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#menu .box_Menu .card .menuPrice {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+  padding: 2em 1em 0 1em;
+  font-weight: bold;
+}
+#menu .box_Menu .card .validation {
+  display: flex;
+  background: #99E2D0;
+  width: 59px;
+  margin-right: -4em;
+}
+#menu .box_Menu .card .validation i {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  color: #99E2D0;
+  background: white;
+  border-radius: 30px;
+  padding: 3px;
+}
+
+.card {
+  display: flex;
+  background: white;
+  border-radius: 15.0431px;
+  overflow: hidden;
+  width: 100%;
+  margin: 1em 0;
+  cursor: pointer;
+  opacity: 0; /* Initialement, masquer les cartes */
+  transform: translateY(-20px); /* Déplacer les cartes vers le haut */
+  animation: slideInTop 1s ease-in-out forwards;
+  /* Add a delay for each card */
+}
+.card:nth-child(1) {
+  animation-delay: 0.2s; /* Délai pour la première carte */
+}
+.card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.card:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.card:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.card:not(:hover) .validation {
+  transition: 2s;
+}
+.card:hover .validation {
+  margin: 0em;
+  transition: 1s;
+}
+.card:hover .validation i {
+  animation-name: rotation;
+  animation-duration: 1s;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=menu.css.map */
